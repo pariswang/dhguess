@@ -23,7 +23,7 @@ return  array(
     'APP_SUB_DOMAIN_RULES'  =>  array(), // 子域名部署规则
     'APP_DOMAIN_SUFFIX'     =>  '', // 域名后缀 如果是com.cn net.cn 之类的后缀必须设置    
     'ACTION_SUFFIX'         =>  '', // 操作方法后缀
-    'MULTI_MODULE'          =>  true, // 是否允许多模块 如果为false 则必须设置 DEFAULT_MODULE
+    'MULTI_MODULE'          =>  false, // 是否允许多模块 如果为false 则必须设置 DEFAULT_MODULE
     'MODULE_DENY_LIST'      =>  array('Common','Runtime'),
     'CONTROLLER_LEVEL'      =>  1,
     'APP_AUTOLOAD_LAYER'    =>  'Controller,Model', // 自动加载的应用类库层 关闭APP_USE_NAMESPACE后有效
@@ -144,7 +144,7 @@ return  array(
     'URL_PARAMS_BIND_TYPE'  =>  0, // URL变量绑定的类型 0 按变量名绑定 1 按变量顺序绑定
     'URL_PARAMS_FILTER'     =>  false, // URL变量绑定过滤
     'URL_PARAMS_FILTER_TYPE'=>  '', // URL变量绑定过滤方法 如果为空 调用DEFAULT_FILTER
-    'URL_ROUTER_ON'         =>  false,   // 是否开启URL路由
+    'URL_ROUTER_ON'         =>  true,   // 是否开启URL路由
     'URL_ROUTE_RULES'       =>  array(), // 默认路由规则 针对模块
     'URL_MAP_RULES'         =>  array(), // URL映射定义规则
 
