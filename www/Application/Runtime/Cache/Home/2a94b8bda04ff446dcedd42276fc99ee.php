@@ -13,7 +13,7 @@
 <div class="main home">
 	<div class="motif-bg"></div>
 	<div class="home-ft">
-		<p><span>5</span> more chances remaining</p>
+		<p><span><?php echo ($user["guess_count"]); ?></span> more chances remaining</p>
 		<div class="btn-bar">
 			<button class="btn">START!</button>
 		</div>
@@ -26,7 +26,10 @@
 </div>
 <script>
 $('.btn').click(function(){
-	location.href = '<?php echo (C("app_path")); ?>/game';
+<?php if($logined): if($user['guess_count'] < 0): ?>alert('You have no more chance, invite your friends to earn chance.');
+	<?php else: ?>
+	location.href = '<?php echo (C("app_path")); ?>/game';<?php endif; ?>
+<?php else: endif; ?>
 });
 </script>
 </body>

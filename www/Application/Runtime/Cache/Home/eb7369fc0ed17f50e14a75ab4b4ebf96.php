@@ -11,8 +11,8 @@
     <body>
 <div class="bg"></div>
 <div class="main">
-	
-	<div class="box-issue off-hd">
+	<div class="box-issue">
+		<div class="hd"></div>
 		<div class="con">
 			<div class="title">What’s this?</div>
 			<div class=" img">

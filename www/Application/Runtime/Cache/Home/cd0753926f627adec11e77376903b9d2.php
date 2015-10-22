@@ -15,7 +15,7 @@
 		<div class="hd"></div>
 		<div class="con">
 			<p class="share-input">
-				<label>分享链接: </label> http://url/12319fsdfs
+				<label>分享链接: </label> http://<?php echo ($_SERVER['SERVER_NAME']); ?>/<?php echo (C("app_path")); ?>/invite/<?php echo ($code); ?>
 			</p>
 			<p>
 				Copy and paste the above invitation code to invite
@@ -27,8 +27,8 @@ you'll get an extra play.
 
 	<div class="home-ft">
 		<div class="btn-bar">
-			<button class="btn" style="margin-bottom: 15px">4 invitations sent</button>
-			<button class="btn btn-blue">在玩一次</button>
+			<a class="btn" style="margin-bottom: 15px"><?php echo ($invite_count); ?> invitations sent</a>
+			<a class="btn btn-blue" href="<?php echo (C("app_path")); ?>/game">在玩一次</a>
 		</div>
 	</div>
 </div>

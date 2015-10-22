@@ -19,7 +19,7 @@
 			<div class="btn-bar">
 				<button class="btn btn-sm">Use my coupon</button>
 			</div>
-			<p style="text-align: center">You now have 5 coupons in total</p>
+			<p style="text-align: center">You now have <?php echo ($coupons_count); ?> coupons in total</p>
 			
 		</div>
 	</div>
@@ -31,8 +31,8 @@
 extra play.
 		</p>
 		<div class="btn-bar">
-			<button class="btn btn-green" style="margin-bottom: 15px">Share</button>
-			<button class="btn btn-blue">Have another go</button>
+			<a class="btn btn-green" style="margin-bottom: 15px" href="<?php echo (C("app_path")); ?>/game/share">Share</a>
+			<a class="btn btn-blue" href="<?php echo (C("app_path")); ?>/game">Have another go</a>
 		</div>
 	</div>
 </div>

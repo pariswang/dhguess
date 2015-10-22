@@ -3,7 +3,7 @@
 <div class="main home">
 	<div class="motif-bg"></div>
 	<div class="home-ft">
-		<p><span>5</span> more chances remaining</p>
+		<p><span>{$user.guess_count}</span> more chances remaining</p>
 		<div class="btn-bar">
 			<button class="btn">START!</button>
 		</div>
@@ -16,7 +16,15 @@
 </div>
 <script>
 $('.btn').click(function(){
+<if condition="$logined">
+	<if condition="$user['guess_count'] lt 0">
+	alert('You have no more chance, invite your friends to earn chance.');
+	<else/>
 	location.href = '{$Think.config.app_path}/game';
+	</if>
+<else/>
+	
+</if>
 });
 </script>
 <include file="Public/foot" />

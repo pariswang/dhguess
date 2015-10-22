@@ -2,9 +2,17 @@
 namespace Home\Controller;
 use Think\Controller;
 class GameController extends Controller {
+	public function _before_index(){
+		if(session('uid')<=0){
+			$this->redirect(C('app_path').'/');
+		}
+	}
+	
     public function index(){
-		$this->uid = session('uid');
-		//$list = M('users')->select();
+		$user = M('users')->where(array('id'=>session('uid')))->find();
+		if($user['guess_count']<=0){
+			$this->redirect(C('app_path').'/');
+		}
 		
 		$products = C('products');
 		$pid = rand(1,count($products));
@@ -21,13 +29,13 @@ class GameController extends Controller {
 			session('guess_type', 2);
 			$this->display('guess_name');
 		}
+		M('users')->where(array('id'=>session('uid')))->setDec('guess_count');
     }
 	
 	public function result(){
 		$product = session('product');
 		
 		if(session('guess_type') == 1){
-			session('guess_type', null);
 			$sel = I('post.select');
 			if( $product['right_price'] == $sel ){
 				//right
@@ -37,7 +45,6 @@ class GameController extends Controller {
 				$this->display('result_err');
 			}
 		}else{
-			session('guess_type', null);
 			$name = I('post.name');
 			if( strtolower($product['name']) == strtolower($name) ){
 				//right
@@ -70,15 +77,39 @@ class GameController extends Controller {
 			}
 		}
 		
+		
 		if( session('hit') == 1 ){
 			$this->product = session('product');
 			$this->display('draw_hit');
 		}else{
+			$coupon = array(
+				'user_id' => session('uid'),
+				'coupon_id' => 1,
+				'ctime' => date('Y-m-d H:i:s'),
+				'code' => 'abc',
+			);
+			M('coupon')->add($coupon);
+			$this->coupons = M('coupon')->where(array('user_id'=>session('uid')))->select();
+			$this->coupons_count = count($this->coupons);
 			$this->display('draw_none');
 		}
 	}
 	
 	public function share(){
+		$invites = M('invite')->where(array('sender_id' => session('uid') ))->select();
+		do{
+			$code = rand(111111, 999999);
+			$exist = M('invite')->where(array('code'=>$code))->count();
+		}while($exist>0);
+		$invite = array(
+			'sender_id' => session('uid'),
+			'ctime' => date('Y-m-d H:i:s'),
+			'code' => $code,
+			'state' => 1
+		);
+		M('invite')->add($invite);
+		$this->code = $invite['code'];
+		$this->invite_count = count($invites);
 		$this->display();
 	}
 	
