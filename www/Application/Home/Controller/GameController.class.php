@@ -77,4 +77,12 @@ class GameController extends Controller {
 			$this->display('draw_none');
 		}
 	}
+	
+	public function share(){
+		$this->display();
+	}
+	
+	public function help(){
+		$this->display();
+	}
 }

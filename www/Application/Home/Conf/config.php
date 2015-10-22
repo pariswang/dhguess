@@ -20,4 +20,5 @@ return array(
 			'count' => 0,
 		),
 	),
+	'default_chance' => 3,
 );

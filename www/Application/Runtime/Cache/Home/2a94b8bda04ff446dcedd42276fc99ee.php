@@ -18,9 +18,9 @@
 			<button class="btn">START!</button>
 		</div>
 		<p>
-			<a href="">Invitation sent</a><span class="line"> | </span><a href="">My coupons</a>
+			<a href="<?php echo (C("app_path")); ?>/my/invite">Invitation sent</a><span class="line"> | </span><a href="<?php echo (C("app_path")); ?>/my/coupon">My coupons</a>
 			<span class="line"> | </span>
-			<a href="">My prizes</a>
+			<a href="<?php echo (C("app_path")); ?>/my/prize">My prizes</a>
 		</p>
 	</div>
 </div>
