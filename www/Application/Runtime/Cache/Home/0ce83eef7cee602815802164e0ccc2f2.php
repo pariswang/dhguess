@@ -10,23 +10,35 @@
     </head>
     <body>
 <div class="bg"></div>
-<div class="main home">
-	<div class="motif-bg"></div>
-	<div class="home-ft">
-		<p><span>5</span> more chances remaining</p>
-		<div class="btn-bar">
-			<button class="btn">START!</button>
+<div class="main">
+	<div class="box-issue">
+		<div class="hd"><h1>Bingo！That’s correct!</h1></div>
+		<div class="con">
+			<p style="padding-top: 0;font-size: 14px;line-height:22px;text-align: center">Congratulations! You now have the chance to win It.</p>
 		</div>
-		<p>
-			<a href="">Invitation sent</a><span class="line"> | </span><a href="">My coupons</a>
-			<span class="line"> | </span>
-			<a href="">My prizes</a>
-		</p>
 	</div>
+	
+	<div class="home-ft">
+		<div class="btn-bar">
+			<button class="btn" id="start">Play the lucky draw</button>
+		</div>
+	</div>
+	
 </div>
 <script>
-$('.btn').click(function(){
-	location.href = '<?php echo (C("app_path")); ?>/game';
+$('#start').click(function(){
+	var self = this;
+	function ani(n){
+		$(self).text('DRAW'+(new Array(n+1).join('.')));
+		if(n == 0){
+			location.href='<?php echo (C("app_path")); ?>/game/draw';
+			return;
+		}
+		setTimeout(function(){
+			ani(n-1);
+		}, 1000);
+	}
+	ani(3);
 });
 </script>
 </body>
