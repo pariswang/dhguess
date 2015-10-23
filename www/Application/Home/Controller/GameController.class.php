@@ -72,6 +72,8 @@ class GameController extends Controller {
 			$email = I('post.email');
 			$pattern = "/^([0-9A-Za-z\\-_\\.]+)@([0-9a-z]+\\.[a-z]{2,3}(\\.[a-z]{2})?)$/i";
 			if( $username && $email && preg_match( $pattern, $email ) ){
+				$this->username = $username;
+				$this->email = $email;
 				$this->display('draw_complete');
 				exit;
 			}
@@ -96,7 +98,6 @@ class GameController extends Controller {
 	}
 	
 	public function share(){
-		$invites = M('invite')->where(array('sender_id' => session('uid') ))->select();
 		do{
 			$code = rand(111111, 999999);
 			$exist = M('invite')->where(array('code'=>$code))->count();
@@ -109,11 +110,31 @@ class GameController extends Controller {
 		);
 		M('invite')->add($invite);
 		$this->code = $invite['code'];
+		$invites = M('invite')->where(array('sender_id' => session('uid') ))->select();
 		$this->invite_count = count($invites);
 		$this->display();
 	}
 	
 	public function help(){
+		do{
+			$code = rand(111111, 999999);
+			$exist = M('invite')->where(array('code'=>$code))->count();
+		}while($exist>0);
+		$invite = array(
+			'sender_id' => session('uid'),
+			'ctime' => date('Y-m-d H:i:s'),
+			'code' => $code,
+			'state' => 1,
+			'help_info' => serialize(array(
+				'product' => session('product'),
+				'guess_type' => session('guess_type'),
+			)),
+		);
+		M('invite')->add($invite);
+		$this->code = $invite['code'];
+		
+		$invites = M('invite')->where(array('sender_id' => session('uid') ))->select();
+		$this->invite_count = count($invites);
 		$this->display();
 	}
 }

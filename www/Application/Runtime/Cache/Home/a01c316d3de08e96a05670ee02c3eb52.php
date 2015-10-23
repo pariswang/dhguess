@@ -27,12 +27,12 @@
 			</ul>
 			
 			<div class="invite-list">
-				<div class="invite-list-hd"> You've invited 6 people  </div>
+				<div class="invite-list-hd"> You've invited <?php echo ($invite_count); ?> people  </div>
 				<ul class="invite-list-ul">
-					<li>
-						<span>9/10/2015</span>
-						friend accepts
-					</li>
+					<?php if(is_array($invites)): foreach($invites as $key=>$vo): ?><li>
+							<span><?php echo ($vo["time_str"]); ?></span>
+							<?php if($vo.newer_id): ?>friend accepts<?php endif; ?>
+						</li><?php endforeach; endif; ?>
 				</ul>
 			</div>
 		</div>

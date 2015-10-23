@@ -17,12 +17,14 @@
 			</ul>
 			
 			<div class="invite-list">
-				<div class="invite-list-hd"> You've invited 6 people  </div>
+				<div class="invite-list-hd"> You've invited {$invite_count} people  </div>
 				<ul class="invite-list-ul">
-					<li>
-						<span>9/10/2015</span>
-						friend accepts
-					</li>
+					<foreach name="invites" item="vo">
+						<li>
+							<span>{$vo.time_str}</span>
+							<if condition="$vo.newer_id">friend accepts</if>
+						</li>
+					</foreach>
 				</ul>
 			</div>
 		</div>
