@@ -1,0 +1,32 @@
+<include file="Public/head" />
+<div class="bg"></div>
+<div class="main home">
+	<div class="motif-bg"></div>
+	<div class="home-ft">
+		<if condition="$user.guess_count gt 0">
+		<p><span>{$user.guess_count}</span> more chances remaining</p>
+		</if>
+		<div class="btn-bar">
+			<button class="btn">START!</button>
+		</div>
+		<p>
+			<a href="{$Think.config.app_path}/my/invite">Invitation sent</a><span class="line"> | </span><a href="{$Think.config.app_path}/my/coupon">My coupons</a>
+			<span class="line"> | </span>
+			<a href="{$Think.config.app_path}/my/prize">My prizes</a>
+		</p>
+	</div>
+</div>
+<script>
+$('.btn').click(function(){
+<if condition="$logined">
+	<if condition="$user['guess_count'] lt 0">
+	alert('You have no more chance, invite your friends to earn chance.');
+	<else/>
+	location.href = '{$Think.config.app_path}/game';
+	</if>
+<else/>
+	
+</if>
+});
+</script>
+<include file="Public/foot" />

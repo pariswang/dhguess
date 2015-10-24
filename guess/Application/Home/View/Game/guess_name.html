@@ -1,0 +1,45 @@
+<include file="Public/head" />
+<div class="bg"></div>
+<div class="main">
+	<div class="box-issue">
+		<div class="hd"></div>
+		<div class="con">
+			<div class="title">What’s this?</div>
+			<div class=" img">
+				<div class="img-con">
+					<img src="{$Think.config.app_path}{$product.img}" />
+				</div>
+			</div>
+			<p>Buyers can receive a refund and keep the item(s) once the item(s) are not as described or possess any quality issues by negotiating directly with the seller.</p>
+		</div>
+	</div>
+	
+	<form id="form" method="POST" action="{$Think.config.app_path}/game/result">
+		<div class="btn-wp">
+			<input type="text" class="input-text" name="name" value="" placeholder="{$product.holder}"/>
+		</div>
+		
+		<div class="home-ft" id="submit">
+			<div class="btn-bar">
+				<button class="btn">OK{$product.right_price}|{$product.count}</button>
+			</div>
+			<p>
+				<a href="">You only have one chance for that!</a>
+			</p>
+			<p>
+				<a href="">Too hard? Try some other product</a>
+			</p>
+		</div>
+	</form>
+</div>
+<script>
+$('#submit').click(function(){
+	var val = $('input[name=name]').val();
+	if(val){
+		$('#form').submit();
+		return;
+	}
+	return false;
+});
+</script>
+<include file="Public/foot" />

@@ -1,0 +1,29 @@
+<include file="Public/head" />
+<div class="bg"></div>
+<div class="main">
+	<div class="box-issue">
+		<div class="hd"></div>
+		<div class="con">
+			<div class="title">Oops, you didn’t get the prize, but lucky for you, you won a US $XX coupon!</div>
+			
+			<div class="btn-bar">
+				<a class="btn btn-sm" href="{$product.link2}">Use my coupon</a>
+			</div>
+			<p style="text-align: center">You now have {$coupons_count} coupons in total</p>
+			
+		</div>
+	</div>
+
+	<div class="home-ft" style="padding-top: 20px">
+		<p>
+			Click 〝share〞to invite  more friends<br>
+			If your friend accepts your invitation, you'll get an
+extra play.
+		</p>
+		<div class="btn-bar">
+			<a class="btn btn-green" style="margin-bottom: 15px" href="{$Think.config.app_path}/game/share">Share</a>
+			<a class="btn btn-blue" href="{$Think.config.app_path}/game">Have another go</a>
+		</div>
+	</div>
+</div>
+<include file="Public/foot" />

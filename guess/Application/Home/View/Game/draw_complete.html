@@ -1,0 +1,32 @@
+<include file="Public/head" />
+<div class="bg"></div>
+<div class="main">
+	<div class="box-issue">
+		<div class="hd"><h1>Information submitted!</h1></div>
+		<div class="con">
+			<p>
+				<label>Name: </label> {$username}
+			</p>
+			<p>
+				<label>Email: </label> {$email}
+			</p>
+			<p>
+				Click ‘GO’ to place an order for this prize, 
+filing in your address without making the payment. 
+We’ll take care of the payment part, and arrange 
+for the prize to be shipped to you.
+Or collect the prize by clicking on 〞My prize〞located 
+on the home page after you have played all rounds .
+			</p>
+		</div>
+	</div>
+
+	<div class="home-ft">
+		<div class="btn-bar">
+			<a class="btn" style="margin-bottom: 15px" href="{$product.link3}">Go</a>
+			<a class="btn btn-blue" href="{$Think.config.app_path}/game">在玩一次</a>
+		</div>
+	</div>
+
+</div>
+<include file="Public/foot" />

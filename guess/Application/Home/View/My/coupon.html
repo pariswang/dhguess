@@ -1,0 +1,41 @@
+<include file="Public/head" />
+<div class="bg"></div>
+<div class="main">
+
+	<div class="box-issue">
+		<div class="hd"></div>
+		<div class="con">
+			<h4 class="coupon-title">Coupon</h4>
+			<div class="coupon-list">
+				<ul class="coupon-list-ul">
+					<volist name="coupons" id="co" empty="$empty">
+					<li>
+						<h3 class="us">US$25</h3>
+						<div class="coupon-code">
+							<h6>Coupon Code</h6>
+							<p>{$co.code}</p>
+						</div>
+						<p>
+							Business: 商户名称<br>
+							Address: 商户地址咯
+						</p>
+					</li>
+					</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="home-ft" style="padding-top: 20px">
+	   
+		<div class="btn-bar">
+			<a class="btn" style="margin-bottom: 15px" href="http://www.dhgate.com?f=social|guessgame|mycoupon">Use coupon</a>
+			
+			<a class="btn btn-blue" href="{$Think.config.app_path}/game">Have another go</a>
+		</div>
+
+	</div>
+
+</div>
+<include file="Public/foot" />

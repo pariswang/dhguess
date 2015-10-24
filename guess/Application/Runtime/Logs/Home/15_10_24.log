@@ -1,0 +1,2561 @@
+[ 2015-10-24T16:17:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016698s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.1038s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Undefined variable: user D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011329s ]
+
+[ 2015-10-24T16:17:36+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+
+[ 2015-10-24T16:33:38+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: user D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2015-10-24T16:33:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001486s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2015-10-24T16:33:44+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.0960s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2015-10-24T16:34:16+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001418s ]
+
+[ 2015-10-24T16:34:55+08:00 ] 127.0.0.1 /game/help
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0716s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `invite` WHERE `code` = 520616 LIMIT 1   [ RunTime:0.0273s ]
+SQL: INSERT INTO `invite` (`sender_id`,`ctime`,`code`,`state`) VALUES ('1','2015','520616','1') [ RunTime:0.0718s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002411s ]
+
+[ 2015-10-24T16:35:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2015-10-24T16:35:35+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001375s ]
+
+[ 2015-10-24T16:35:38+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2015-10-24T16:36:03+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2015-10-24T16:39:14+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000851s ]
+
+[ 2015-10-24T16:58:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-10-24T16:58:03+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+
+[ 2015-10-24T16:58:22+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001382s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('3','1','1','2015-10-24 16:58:22','0') [ RunTime:0.0805s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.0574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002541s ]
+
+[ 2015-10-24T16:58:36+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002170s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `question` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001796s ]
+SQL: UPDATE `question` SET `product_id`='3',`type`='1',`user_id`='1',`ctime`='2015-10-24 16:58:22',`answer`='2',`helper_id`='0' WHERE `id` = 1 [ RunTime:0.0821s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005744s ]
+
+[ 2015-10-24T17:02:53+08:00 ] 127.0.0.1 /game/help
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `invite` WHERE `code` = 571940 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `invite` (`sender_id`,`ctime`,`code`,`state`,`help_info`) VALUES ('1','2015','571940','1','a:3:{s:7:\"product\";a:11:{s:2:\"id\";i:3;s:4:\"name\";s:0:\"\";s:6:\"holder\";s:0:\"\";s:3:\"img\";s:12:\"/img/1/3.jpg\";s:5:\"price\";a:4:{i:1;s:6:\"25.99$\";i:2;s:6:\"36.89$\";i:3;s:6:\"42.68$\";i:4;s:6:\"27.99$\";}s:11:\"right_price\";i:4;s:6:\"chance\";i:10;s:5:\"count\";i:1;s:5:\"link1\";s:124:\"http://www.dhgate.com/store/product/bluetooth-smart-watch-m26-watch-wristwatch/251033847.html?f=social|guessgame|251033847|1\";s:5:\"link2\";s:124:\"http://www.dhgate.com/store/product/bluetooth-smart-watch-m26-watch-wristwatch/251033847.html?f=social|guessgame|251033847|2\";s:5:\"link3\";s:124:\"http://www.dhgate.com/store/product/bluetooth-smart-watch-m26-watch-wristwatch/251033847.html?f=social|guessgame|251033847|3\";}s:10:\"guess_type\";i:1;s:11:\"question_id\";s:1:\"1\";}') [ RunTime:0.0850s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003438s ]
+
+[ 2015-10-24T17:05:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2015-10-24T17:05:07+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001451s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2015-10-24T17:07:17+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000672s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001584s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Use of undefined constant newer_id - assumed 'newer_id' D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+NOTIC: [8] Array to string conversion D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\a01c316d3de08e96a05670ee02c3eb52.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2015-10-24T17:07:42+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-10-24T17:08:36+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2015-10-24T17:10:13+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008615s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2015-10-24T17:17:30+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `invite` INNER JOIN users on users.id=invite.newer_id  WHERE `sender_id` = 1  [ RunTime:0.0385s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2015-10-24T17:17:46+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `invite` INNER JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2015-10-24T17:20:14+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+
+[ 2015-10-24T17:20:35+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001821s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `invite` INNER JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009107s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2015-10-24T17:20:59+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001503s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `invite` INNER JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-10-24T17:23:12+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2015-10-24T17:23:24+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+
+[ 2015-10-24T17:32:57+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0030s ]
+SQL: SELECT invite.*,users.name FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+
+[ 2015-10-24T17:39:55+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0028s ]
+SQL: SELECT invite.*,users.name FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2015-10-24T17:43:05+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000984s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0027s ]
+SQL: SELECT invite.*,users.name FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2015-10-24T17:43:06+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0028s ]
+SQL: SELECT invite.*,users.name FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2015-10-24T17:43:07+08:00 ] 127.0.0.1 /game/share
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `invite` WHERE `code` = 952880 LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `invite` (`sender_id`,`ctime`,`code`,`state`) VALUES ('1','2015','952880','1') [ RunTime:0.1410s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2015-10-24T17:43:09+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0027s ]
+SQL: SELECT invite.*,users.name FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2015-10-24T17:43:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2015-10-24T17:43:19+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000994s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000981s ]
+
+[ 2015-10-24T17:48:37+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2015-10-24T17:49:13+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+
+[ 2015-10-24T17:49:13+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: user D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2015-10-24T17:49:15+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `question` WHERE `id` = null LIMIT 1   [ RunTime:0.3808s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001379s ]
+
+[ 2015-10-24T17:51:27+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `question` WHERE `id` = null LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000940s ]
+
+[ 2015-10-24T17:51:55+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+
+[ 2015-10-24T17:51:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: user D:\code\dhg\dhguess\www\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 16 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2015-10-24T18:03:57+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2015-10-24T18:04:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2015-10-24T18:04:02+08:00 ] 127.0.0.1 /my/prize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037349s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000889s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001276s ]
+
+[ 2015-10-24T18:23:37+08:00 ] 127.0.0.1 /my/prize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+
+[ 2015-10-24T18:23:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-10-24T18:25:42+08:00 ] 127.0.0.1 /my/prize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+
+[ 2015-10-24T18:25:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000834s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2015-10-24T18:57:55+08:00 ] 127.0.0.1 /my/prize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2015-10-24T18:59:56+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007403s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007479s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2015-10-24T19:00:44+08:00 ] 127.0.0.1 /my/prize
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2015-10-24T19:00:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001541s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2015-10-24T19:00:47+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2015-10-24T19:03:21+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000661s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2015-10-24T19:03:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-10-24T19:03:34+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('14','1','1','2015-10-24 19:03:34','0') [ RunTime:0.0753s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.1134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001432s ]
+
+[ 2015-10-24T19:03:39+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `question` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+SQL: UPDATE `question` SET `product_id`='14',`type`='1',`user_id`='1',`ctime`='2015-10-24 19:03:34',`answer`='2',`helper_id`='0' WHERE `id` = 2 [ RunTime:0.0417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2015-10-24T19:03:53+08:00 ] 127.0.0.1 /game/help
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `invite` WHERE `code` = 954128 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `invite` (`sender_id`,`ctime`,`code`,`state`,`help_info`) VALUES ('1','2015','954128','1','a:3:{s:7:\"product\";a:11:{s:2:\"id\";i:14;s:4:\"name\";s:0:\"\";s:6:\"holder\";s:0:\"\";s:3:\"img\";s:13:\"/img/2/03.jpg\";s:5:\"price\";a:4:{i:1;s:6:\"25.35$\";i:2;s:6:\"31.35$\";i:3;s:6:\"45.35$\";i:4;s:6:\"36.35$\";}s:11:\"right_price\";i:4;s:6:\"chance\";i:10;s:5:\"count\";i:0;s:5:\"link1\";s:117:\"http://www.dhgate.com/product/face-care-yunifang-osmanthus-fragrans-eye/246922655.html?f=social|guessgame|246922655|1\";s:5:\"link2\";s:117:\"http://www.dhgate.com/product/face-care-yunifang-osmanthus-fragrans-eye/246922655.html?f=social|guessgame|246922655|2\";s:5:\"link3\";s:117:\"http://www.dhgate.com/product/face-care-yunifang-osmanthus-fragrans-eye/246922655.html?f=social|guessgame|246922655|3\";}s:10:\"guess_type\";i:1;s:11:\"question_id\";s:1:\"2\";}') [ RunTime:0.0448s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2015-10-24T19:03:56+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0025s ]
+SQL: SELECT invite.*,users.name FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-10-24T19:04:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000929s ]
+
+[ 2015-10-24T19:04:03+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001583s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0027s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('6','1','1','2015-10-24 19:04:03','0') [ RunTime:0.1094s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.0388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001197s ]
+
+[ 2015-10-24T19:04:08+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `question` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000708s ]
+SQL: UPDATE `question` SET `product_id`='6',`type`='1',`user_id`='1',`ctime`='2015-10-24 19:04:03',`answer`='2',`helper_id`='0' WHERE `id` = 3 [ RunTime:0.0557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2015-10-24T19:04:17+08:00 ] 127.0.0.1 /game/help
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `invite` WHERE `code` = 791503 LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `invite` (`sender_id`,`ctime`,`code`,`state`,`help_info`) VALUES ('1','2015','791503','1','a:3:{s:7:\"product\";a:11:{s:2:\"id\";i:6;s:4:\"name\";s:0:\"\";s:6:\"holder\";s:0:\"\";s:3:\"img\";s:12:\"/img/1/6.jpg\";s:5:\"price\";a:4:{i:1;s:6:\"49.99$\";i:2;s:6:\"59.99$\";i:3;s:6:\"31.99$\";i:4;s:6:\"39.99$\";}s:11:\"right_price\";i:4;s:6:\"chance\";i:10;s:5:\"count\";i:1;s:5:\"link1\";s:117:\"http://www.dhgate.com/product/us-stock-q8-7-quot-android-4-2-8gb-tablet/182393815.html?f=social|guessgame|182393815|1\";s:5:\"link2\";s:117:\"http://www.dhgate.com/product/us-stock-q8-7-quot-android-4-2-8gb-tablet/182393815.html?f=social|guessgame|182393815|2\";s:5:\"link3\";s:117:\"http://www.dhgate.com/product/us-stock-q8-7-quot-android-4-2-8gb-tablet/182393815.html?f=social|guessgame|182393815|3\";}s:10:\"guess_type\";i:1;s:11:\"question_id\";s:1:\"3\";}') [ RunTime:0.0495s ]
+SQL: SELECT * FROM `invite` WHERE `sender_id` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001957s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001858s ]
+
+[ 2015-10-24T19:04:26+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0027s ]
+SQL: SELECT invite.*,users.name FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2015-10-24T19:05:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-10-24T19:05:10+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0038s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('7','1','1','2015-10-24 19:05:10','0') [ RunTime:0.0533s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.0383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2015-10-24T19:05:14+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001590s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `question` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000764s ]
+SQL: UPDATE `question` SET `product_id`='7',`type`='1',`user_id`='1',`ctime`='2015-10-24 19:05:10',`answer`='1',`helper_id`='0' WHERE `id` = 1 [ RunTime:0.0688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001240s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001328s ]
+
+[ 2015-10-24T19:05:20+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0026s ]
+SQL: INSERT INTO `coupon` (`user_id`,`coupon_id`,`ctime`,`code`) VALUES ('1','1','2015-10-24 19:05:20','abc') [ RunTime:0.0620s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2015-10-24T19:06:24+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001196s ]
+
+[ 2015-10-24T19:07:38+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+
+[ 2015-10-24T19:08:04+08:00 ] 127.0.0.1 /my/invite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `invite` [ RunTime:0.0026s ]
+SQL: SELECT invite.*,users.name FROM `invite` LEFT JOIN users on users.id=invite.newer_id  WHERE invite.sender_id = 1  [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `question` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002161s ]
+
+[ 2015-10-24T19:08:17+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `coupon` WHERE `id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2015-10-24T19:10:01+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-10-24T19:11:43+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2015-10-24T19:15:07+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2015-10-24T19:16:21+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001305s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-10-24T19:17:25+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\code\dhg\dhguess\www\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 70 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+
+[ 2015-10-24T19:17:33+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\code\dhg\dhguess\www\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php 第 70 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000462s ]
+
+[ 2015-10-24T19:18:12+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-10-24T19:19:23+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2015-10-24T19:19:30+08:00 ] 127.0.0.1 /my/coupon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000983s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2015-10-24T19:19:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001079s ]
+
+[ 2015-10-24T19:19:52+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0023s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('8','1','1','2015-10-24 19:19:51','0') [ RunTime:0.0546s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.0830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001143s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2015-10-24T19:19:55+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `question` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+SQL: UPDATE `question` SET `product_id`='8',`type`='1',`user_id`='1',`ctime`='2015-10-24 19:19:51',`answer`='1',`helper_id`='0' WHERE `id` = 2 [ RunTime:0.0881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2015-10-24T19:20:00+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0032s ]
+SQL: INSERT INTO `coupon` (`user_id`,`coupon_id`,`ctime`,`code`) VALUES ('1','1','2015-10-24 19:20:00','abc') [ RunTime:0.0644s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002621s ]
+
+[ 2015-10-24T19:20:55+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('7','1','1','2015-10-24 19:20:55','0') [ RunTime:0.0626s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.0583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001161s ]
+
+[ 2015-10-24T19:20:59+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002405s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `question` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+SQL: UPDATE `question` SET `product_id`='7',`type`='1',`user_id`='1',`ctime`='2015-10-24 19:20:55',`answer`='1',`helper_id`='0' WHERE `id` = 3 [ RunTime:0.0483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2015-10-24T19:21:05+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0023s ]
+SQL: INSERT INTO `coupon` (`user_id`,`coupon_id`,`ctime`,`code`) VALUES ('1','1','2015-10-24 19:21:05','abc') [ RunTime:0.0708s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2015-10-24T20:24:38+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010076s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001981s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0059s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('7','1','1','2015-10-24 20:24:37','0') [ RunTime:0.0416s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.1221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002824s ]
+
+[ 2015-10-24T20:24:41+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `question` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+SQL: UPDATE `question` SET `product_id`='7',`type`='1',`user_id`='1',`ctime`='2015-10-24 20:24:37',`answer`='1',`helper_id`='0' WHERE `id` = 4 [ RunTime:0.1875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2015-10-24T20:24:47+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0027s ]
+SQL: INSERT INTO `coupon` (`user_id`,`coupon_id`,`ctime`,`code`) VALUES ('1','1','2015-10-24 20:24:47','abc') [ RunTime:0.0553s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001148s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2015-10-24T20:26:59+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0023s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('17','1','1','2015-10-24 20:26:58','0') [ RunTime:0.0607s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.0609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001158s ]
+
+[ 2015-10-24T20:27:01+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002201s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `question` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+SQL: UPDATE `question` SET `product_id`='17',`type`='1',`user_id`='1',`ctime`='2015-10-24 20:26:58',`answer`='1',`helper_id`='0' WHERE `id` = 5 [ RunTime:0.1405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001875s ]
+
+[ 2015-10-24T20:27:06+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001634s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0027s ]
+SQL: INSERT INTO `coupon` (`user_id`,`coupon_id`,`ctime`,`code`) VALUES ('1','1','2015-10-24 20:27:06','abc') [ RunTime:0.1837s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002993s ]
+
+[ 2015-10-24T20:27:18+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0025s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('6','1','1','2015-10-24 20:27:18','0') [ RunTime:0.0648s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.1161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2015-10-24T20:27:21+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `question` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009978s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+SQL: UPDATE `question` SET `product_id`='6',`type`='1',`user_id`='1',`ctime`='2015-10-24 20:27:18',`answer`='1',`helper_id`='0' WHERE `id` = 6 [ RunTime:0.0425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001417s ]
+
+[ 2015-10-24T20:27:27+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0026s ]
+SQL: INSERT INTO `coupon` (`user_id`,`coupon_id`,`ctime`,`code`) VALUES ('1','1','2015-10-24 20:27:27','abc') [ RunTime:0.0719s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001430s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001558s ]
+
+[ 2015-10-24T20:27:32+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0025s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('13','1','1','2015-10-24 20:27:31','0') [ RunTime:0.1073s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.0584s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2015-10-24T20:27:36+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `question` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000621s ]
+SQL: UPDATE `question` SET `product_id`='13',`type`='1',`user_id`='1',`ctime`='2015-10-24 20:27:31',`answer`='1',`helper_id`='0' WHERE `id` = 7 [ RunTime:0.0494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2015-10-24T20:27:41+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001592s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2015-10-24T20:27:50+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+
+[ 2015-10-24T20:28:37+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042128s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2015-10-24T20:28:39+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `users` SET `name`='paris',`img`='',`ctime`='0000-00-00 00:00:00',`guess_count`='50',`used_count`='0',`hit`='1',`username`='paris',`email`='suppersoft@gmail.com',`product_id`='13' WHERE `id` = 1 [ RunTime:0.1174s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+
+[ 2015-10-24T20:28:46+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2015-10-24T20:28:48+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `users` SET `name`='paris',`img`='',`ctime`='0000-00-00 00:00:00',`guess_count`='50',`used_count`='0',`hit`='1',`username`='paris',`email`='suppersoft@gmail.com',`product_id`='13' WHERE `id` = 1 [ RunTime:0.0632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+
+[ 2015-10-24T20:28:51+08:00 ] 127.0.0.1 /game
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0031s ]
+SQL: INSERT INTO `question` (`product_id`,`type`,`user_id`,`ctime`,`answer`) VALUES ('20','1','1','2015-10-24 20:28:51','0') [ RunTime:0.4160s ]
+SQL: UPDATE `users` SET `guess_count`=guess_count-1 WHERE `id` = 1 [ RunTime:0.1221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003288s ]
+
+[ 2015-10-24T20:28:56+08:00 ] 127.0.0.1 /game/result
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `question` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `users` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000705s ]
+SQL: UPDATE `question` SET `product_id`='20',`type`='1',`user_id`='1',`ctime`='2015-10-24 20:28:51',`answer`='1',`helper_id`='0' WHERE `id` = 8 [ RunTime:0.1311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2015-10-24T20:29:01+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000069s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+SQL: SHOW COLUMNS FROM `coupon` [ RunTime:0.0024s ]
+SQL: INSERT INTO `coupon` (`user_id`,`coupon_id`,`ctime`,`code`) VALUES ('1','1','2015-10-24 20:29:01','abc') [ RunTime:0.1700s ]
+SQL: SELECT * FROM `coupon` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007282s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2015-10-24T22:33:22+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2015-10-24T22:33:44+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+
+[ 2015-10-24T22:34:03+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+
+[ 2015-10-24T22:35:23+08:00 ] 127.0.0.1 /game/draw
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+
