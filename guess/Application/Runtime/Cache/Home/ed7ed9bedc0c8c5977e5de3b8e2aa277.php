@@ -11,35 +11,22 @@
     <body>
 <div class="bg"></div>
 <div class="main">
-
 	<div class="box-issue">
 		<div class="hd"></div>
 		<div class="con">
-			<div class="title">Oops!<br>
-Sorry, You missed it.</div>
-			<p style="text-align: center">Don’t worry, ask a friend to help you guess it.</p>
-			<div class="btn-bar">
-				<a class="btn btn-sm" href="<?php echo (C("app_path")); ?>/game/help">Share</a>
-			</div>
-			<p>
-			Click 〝share〞to invite  more friends<br>
-			If your friend accepts your invitation, you'll get an
-extra play.
-		</p>
+			<div class="title">Your friend is competing in a guessing game, 
+and he  needs your help to guess it right.
+if you guess it right, you'll both have a go at 
+the lucky draw.</div>                   
 		</div>
 	</div>
-
 
 	<div class="home-ft" style="padding-top: 20px">
+		<p style="margin-bottom: 10px;font-size: 14px;">猜对题目即有机会免费获得竞猜商品</p>
 		<div class="btn-bar">
-			<a class="btn btn-green" style="margin-bottom: 15px" href="<?php echo ($product["link1"]); ?>">Buy Now!</a>
-			
-			<a class="btn btn-blue" href="<?php echo (C("app_path")); ?>/">Have another go</a>
+			<button class="btn" style="margin-bottom: 15px">接受邀请并@他</button>
 		</div>
-
 	</div>
-
 </div>
-<script>document.body.addEventListener('touchstart', function () {});</script>
 </body>
 </html>

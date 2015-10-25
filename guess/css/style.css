@@ -29,7 +29,7 @@ background: -ms-linear-gradient(#ffcc2c, #fcd962);
 background: -o-linear-gradient(#ffcc2c, #fcd962);
 background: linear-gradient(#ffcc2c, #fcd962);
 -pie-background: linear-gradient(#ffcc2c, #fcd962);display: block;line-height:42px;height: 42px;text-align: center;width: 100%}
-.btn:active{opacity: .9}
+.btn:active{opacity: .5}
 
 .box-issue{position: relative;padding-top: 32%}
 .box-issue .hd{background: url('../img/t2.png') no-repeat 42% 0;top:0;width: 100%;position: absolute;background-size:auto 100%;padding-top:32%;}
@@ -41,12 +41,15 @@ background: linear-gradient(#ffcc2c, #fcd962);
 .box-issue p{color: #a5a5a5;padding-top: 12px;line-height: 14px}
 .box-issue .con .title{color: #fdd349;font-size: 16px;margin-top: -20px;text-align: center}
 
+.box-issue.off-hd{padding-top: 4%}
+.box-issue.off-hd .con .title{margin:-5px 0 10px;}
+
 .btn-wp{margin: 0 7.4%;padding-top: 8px;text-align: center}
 
 .btn-list{display: table;width: 100%;}
 .btn-list li{display: inline-block;line-height: 32px;width: 50%;margin-bottom: 8px}
 .btn-list li a{display: block;background-color:rgba(95,60,152,.8);margin: 0 4px;color: #fff}
-.btn-list li a:active,.btn-list li a.select{background-color: rgba(95,60,152,.5)}
+.btn-list li a:active,.btn-list li a.select{background-color: rgba(95,60,152,.5);color:red;}
 
 
 .btn-wp .input-text{background-color: transparent;border: none;color: #fff;text-align: center;line-height: 36px;font-size: 16px;width: 89%;border-bottom: 1px solid rgba(255,255,255,.3)}
@@ -99,22 +102,20 @@ background: linear-gradient(#65a134, #8cb84e);
 .coupon-list-ul .us{color: #fed03e;position: absolute;right: 10px;top: 4px}
 
 .loading{color: #777;font-size:16px;text-align: center;padding:40px 0}
-.loading-num{display: inline-block;width: 30px}
+.loading-num{display: inline-block;width: 30px;white-space:nowrap;  }
 .loading-num:before{
-    display: block;text-align: left;
-    -webkit-animation: myfirst 1s;	/* Safari 和 Chrome */
-    content: "......";
+    display: block;text-align: left;white-space:nowrap;
+    -webkit-animation: myfirst 1.5s;	/* Safari 和 Chrome */
+    content: "......";overflow: hidden;
     -webkit-animation-iteration-count:3000;
 }
 
+.share-input{border: 1px solid rgba(255,255,255,.5);padding:10px!important;margin: 0;background-color: rgba(255,255,255,.2)}
+
 @-webkit-keyframes myfirst /* Safari 和 Chrome */
 {
-    0%   {content: "."}
-    20%  {content: ".."}
-    40%  {content: "..."}
-    60%  {content: "...."}
-    80%  {content: "....."}
-    100% {content: "......"}
+    0%   {width: 0}
+    100%{width: 100%}
 }
 
 

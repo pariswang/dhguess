@@ -8,7 +8,7 @@
 			<h4 class="coupon-title">Coupon</h4>
 			<div class="coupon-list">
 				<ul class="coupon-list-ul">
-					<volist name="coupons" id="co" empty="$empty">
+					<if condition="$coupons gt 0">
 					<li>
 						<h3 class="us">US$25</h3>
 						<div class="coupon-code">
@@ -20,7 +20,9 @@
 							Address: 商户地址咯
 						</p>
 					</li>
-					</volist>
+					<else/>
+					<p>You have no coupon.</p>
+					</if>
 				</ul>
 			</div>
 		</div>
@@ -32,7 +34,7 @@
 		<div class="btn-bar">
 			<a class="btn" style="margin-bottom: 15px" href="http://www.dhgate.com?f=social|guessgame|mycoupon">Use coupon</a>
 			
-			<a class="btn btn-blue" href="{$Think.config.app_path}/game">Have another go</a>
+			<a class="btn btn-blue" href="{$Think.config.app_path}/">Have another go</a>
 		</div>
 
 	</div>

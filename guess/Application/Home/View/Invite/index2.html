@@ -4,21 +4,27 @@
 	<div class="box-issue">
 		<div class="hd"></div>
 		<div class="con">
-			<div class="title">Your friend XXX is now competing in a guessing price
+			<div class="title">Your friend {$inviter.name} is now competing in a guessing price
 game. He thinks the game  is amazing, and  he's suggesting
 you have a try. Guess it , get it!</div>                   
 		</div>
 	</div>
 
 	<div class="home-ft" style="padding-top: 20px">
-		<p style="margin-bottom: 10px;font-size: 14px;">猜对题目即有机会免费获得竞猜商品</p>
-		<p>
-			Tag him to accept
-		</p>
+		<p style="margin-bottom: 10px;font-size: 14px;">You just guessed right, it is possible to receive free goods</p>
 		<div class="btn-bar">
-			<button class="btn" style="margin-bottom: 15px">接受邀请并@他</button>
+			<button class="btn" style="margin-bottom: 15px">Accept</button>
 			<a class="btn btn-blue" href="{$Think.config.app_path}">Have another go</a>
 		</div>
 	</div>
 </div>
+<script>
+$('.btn').click(function(){
+<if condition="is_array($invite['help_info'])">
+location.href = "{$Think.config.app_path}/game/helpguess";
+<else/>
+location.href = "{$Think.config.app_path}";
+</if>
+});
+</script>
 <include file="Public/foot" />

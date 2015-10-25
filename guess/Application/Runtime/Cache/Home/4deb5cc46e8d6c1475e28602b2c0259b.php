@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>Guess It, Get It - DHGate.com</title>
+		<meta property="og:title" content="Guess It, Get It" />
+		<meta property="og:site_name" content="DHGate.com"/>
+		<meta property="og:url" content="http://campaign.dhgate.com/guess" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="<?php echo (C("app_path")); ?>/css/style.css" rel="stylesheet" type="text/css"/>
@@ -18,7 +21,7 @@
 			<h4 class="coupon-title">Coupon</h4>
 			<div class="coupon-list">
 				<ul class="coupon-list-ul">
-					<?php if(is_array($coupons)): $i = 0; $__LIST__ = $coupons;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$co): $mod = ($i % 2 );++$i;?><li>
+					<?php if($coupons > 0): ?><li>
 						<h3 class="us">US$25</h3>
 						<div class="coupon-code">
 							<h6>Coupon Code</h6>
@@ -28,7 +31,9 @@
 							Business: 商户名称<br>
 							Address: 商户地址咯
 						</p>
-					</li><?php endforeach; endif; else: echo "$empty" ;endif; ?>
+					</li>
+					<?php else: ?>
+					<p>You have no coupon.</p><?php endif; ?>
 				</ul>
 			</div>
 		</div>
@@ -40,11 +45,12 @@
 		<div class="btn-bar">
 			<a class="btn" style="margin-bottom: 15px" href="http://www.dhgate.com?f=social|guessgame|mycoupon">Use coupon</a>
 			
-			<a class="btn btn-blue" href="<?php echo (C("app_path")); ?>/game">Have another go</a>
+			<a class="btn btn-blue" href="<?php echo (C("app_path")); ?>/">Have another go</a>
 		</div>
 
 	</div>
 
 </div>
+<script>document.body.addEventListener('touchstart', function () {});</script>
 </body>
 </html>

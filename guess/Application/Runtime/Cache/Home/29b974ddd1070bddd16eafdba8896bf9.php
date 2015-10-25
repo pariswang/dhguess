@@ -15,17 +15,19 @@
 	<div class="box-issue">
 		<div class="hd"></div>
 		<div class="con">
-			<div class="title" style="padding: 12px 0">我的奖品</div>
-			<div class=" img">
+			<div class="title" style="padding: 12px 0">My Prize</div>
+			<?php if($user["hit"] == 1): ?><div class=" img">
 				<div class="img-con">
 					<img src="<?php echo (C("app_path")); echo ($product["img"]); ?>" />
 				</div>
 			</div>
+			<?php else: ?>
+			<p>You have no prize.</p><?php endif; ?>
 		</div>
 	</div>
-	<div class="home-ft" style="padding-top: 20px">
+	<?php if($user["hit"] == 1): ?><div class="home-ft" style="padding-top: 20px">
 		<div class="btn-bar">
-			<button class="btn" style="margin-bottom: 15px">Collect my prize</button>
+			<a class="btn" style="margin-bottom: 15px" href="<?php echo ($product["link3"]); ?>">Collect my prize</a>
 		</div>
 				<p>Click ‘GO’ to place an order for this prize, 
 				filing in your address without making the payment. </p>
@@ -34,8 +36,8 @@
 				<p>&nbsp;</p>
 				<p>Name: <?php echo ($user["username"]); ?></p>
 				<p>Email: <?php echo ($user["email"]); ?></p>
-	</div>
-
+	</div><?php endif; ?>
 </div>
+<script>document.body.addEventListener('touchstart', function () {});</script>
 </body>
 </html>

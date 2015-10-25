@@ -9,27 +9,53 @@
 Sorry, You missed it.</div>
 			<p style="text-align: center">Don’t worry, ask a friend to help you guess it.</p>
 			<div class="btn-bar">
-				<a class="btn btn-sm" href="{$Think.config.app_path}/game/help">Go</a>
+				<button class="btn btn-sm share">Share</a>
 			</div>
-			
+			<p>
+			Click 〝share〞to invite  more friends<br>
+			If your friend accepts your invitation, you'll get an
+extra play.
+		</p>
 		</div>
 	</div>
 
 
 	<div class="home-ft" style="padding-top: 20px">
-		<p>
-			Click 〝share〞to invite  more friends<br>
-			If your friend accepts your invitation, you'll get an
-extra play.
-		</p>
-
 		<div class="btn-bar">
 			<a class="btn btn-green" style="margin-bottom: 15px" href="{$product.link1}">Buy Now!</a>
 			
-			<a class="btn btn-blue" href="{$Think.config.app_path}/game">Have another go</a>
+			<a class="btn btn-blue" href="{$Think.config.app_path}/">Have another go</a>
 		</div>
 
 	</div>
 
 </div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '150753891946509',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+$('.share').click(function(){
+	FB.ui({
+		method: 'feed',
+		link: 'http://campaign.dhgate.com{$Think.config.app_path}/invite/{$code}',
+		caption: 'Help me guess it.',
+	}, function(response){
+		console.log(response);
+	});
+});
+</script>
 <include file="Public/foot" />

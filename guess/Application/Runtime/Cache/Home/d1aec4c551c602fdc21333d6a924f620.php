@@ -11,15 +11,15 @@
     <body>
 <div class="bg"></div>
 <div class="main">
-	<div class="box-issue">
-		<div class="hd"><h1>How much is it?</h1></div>
+	<div class="box-issue off-hd">
 		<div class="con">
+			<div class="title">How much is it?</div>
 			<div class=" img">
 				<div class="img-con">
 					<img src="<?php echo (C("app_path")); echo ($product["img"]); ?>" />
 				</div>
 			</div>
-			<p>Buyers can receive a refund and keep the item(s) once the item(s) are not as described or possess any quality issues by negotiating directly with the seller.</p>
+			<p><?php echo ($product["desc"]); ?></p>
 		</div>
 	</div>
 	
@@ -36,12 +36,6 @@
 		<div class="btn-bar" id="submit">
 			<button class="btn">OK<?php echo ($product["right_price"]); ?>|<?php echo ($product["count"]); ?></button>
 		</div>
-		<p>
-			<a href="javascript:;">You only have one chance for that!</a>
-		</p>
-		<p>
-			<a href="javascript:;">Too hard? Try some other product</a>
-		</p>
 	</div>
 	
 </div>
@@ -59,5 +53,6 @@ $('#submit').click(function(){
 	}
 });
 </script>
+<script>document.body.addEventListener('touchstart', function () {});</script>
 </body>
 </html>

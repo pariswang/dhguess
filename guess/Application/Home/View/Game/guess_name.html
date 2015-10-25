@@ -1,16 +1,15 @@
 <include file="Public/head" />
 <div class="bg"></div>
 <div class="main">
-	<div class="box-issue">
-		<div class="hd"></div>
+	<div class="box-issue off-hd">
 		<div class="con">
 			<div class="title">What’s this?</div>
 			<div class=" img">
 				<div class="img-con">
-					<img src="{$Think.config.app_path}{$product.img}" />
+					<img src="{$Think.config.app_path}{$product.img_name}" />
 				</div>
 			</div>
-			<p>Buyers can receive a refund and keep the item(s) once the item(s) are not as described or possess any quality issues by negotiating directly with the seller.</p>
+			<p>{$product.desc}</p>
 		</div>
 	</div>
 	
@@ -23,12 +22,6 @@
 			<div class="btn-bar">
 				<button class="btn">OK{$product.right_price}|{$product.count}</button>
 			</div>
-			<p>
-				<a href="">You only have one chance for that!</a>
-			</p>
-			<p>
-				<a href="">Too hard? Try some other product</a>
-			</p>
 		</div>
 	</form>
 </div>

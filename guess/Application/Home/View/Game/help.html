@@ -4,8 +4,9 @@
 	<div class="box-issue">
 		<div class="hd"></div>
 		<div class="con">
-			<p>
-				<label>分享链接: </label> http://{$Think.server.SERVER_NAME}{$Think.config.app_path}/invite/{$code}
+			<p style="padding:0 0 10px 0;">Your invitation code:</p>
+			<p class="share-input">
+				http://campaign.dhgate.com{$Think.config.app_path}/invite/{$code}
 			</p>
 			<p>
 				Copy and paste the above invitation code to invite
@@ -17,9 +18,37 @@ you'll get an extra play.
 
 	<div class="home-ft">
 		<div class="btn-bar">
-			<a class="btn" style="margin-bottom: 15px" href="{$Think.config.app_path}/my/invite">{$invite_count} invitations sent</a>
-			<a class="btn btn-blue" href="{$Think.config.app_path}/game">在玩一次</a>
+			<a class="btn" style="margin-bottom: 15px" href="{$Think.config.app_path}/my/invite">Invitations ({$invite_count})</a>
+			<a class="btn btn-blue" href="{$Think.config.app_path}/">Have another go</a>
 		</div>
 	</div>
 </div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '150753891946509',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+$('.share-input').click(function(){
+	FB.ui({
+		method: 'feed',
+		link: 'http://campaign.dhgate.com{$Think.config.app_path}/invite/{$code}',
+		caption: 'Help me guess it.',
+	}, function(response){
+		console.log(response);
+	});
+});
+</script>
 <include file="Public/foot" />

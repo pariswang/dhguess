@@ -14,8 +14,9 @@
 	<div class="box-issue">
 		<div class="hd"></div>
 		<div class="con">
+			<p style="padding:0 0 10px 0;">Your invitation code:</p>
 			<p class="share-input">
-				<label>分享链接: </label> http://<?php echo ($_SERVER['SERVER_NAME']); echo (C("app_path")); ?>/invite/<?php echo ($code); ?>
+				http://<?php echo ($_SERVER['SERVER_NAME']); echo (C("app_path")); ?>/invite/<?php echo ($code); ?>
 			</p>
 			<p>
 				Copy and paste the above invitation code to invite
@@ -27,10 +28,11 @@ you'll get an extra play.
 
 	<div class="home-ft">
 		<div class="btn-bar">
-			<a class="btn" style="margin-bottom: 15px" href="<?php echo (C("app_path")); ?>/my/invite"><?php echo ($invite_count); ?> invitations sent</a>
-			<a class="btn btn-blue" href="<?php echo (C("app_path")); ?>/game">在玩一次</a>
+			<a class="btn" style="margin-bottom: 15px" href="<?php echo (C("app_path")); ?>/my/invite">Invitations (<?php echo ($invite_count); ?>)</a>
+			<a class="btn btn-blue" href="<?php echo (C("app_path")); ?>/">Have another go</a>
 		</div>
 	</div>
 </div>
+<script>document.body.addEventListener('touchstart', function () {});</script>
 </body>
 </html>

@@ -19,7 +19,7 @@
 $('#start').click(function(){
 	var self = this;
 	function ani(n){
-		$(self).text('DRAW'+(new Array(4-n).join('.')));
+		$(self).text('Draw Ongoing'+(new Array(4-n).join('.')));
 		if(n == 0){
 			location.href='{$Think.config.app_path}/game/draw';
 			return;

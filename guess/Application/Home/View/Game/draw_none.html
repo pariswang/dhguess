@@ -21,9 +21,37 @@
 extra play.
 		</p>
 		<div class="btn-bar">
-			<a class="btn btn-green" style="margin-bottom: 15px" href="{$Think.config.app_path}/game/share">Share</a>
-			<a class="btn btn-blue" href="{$Think.config.app_path}/game">Have another go</a>
+			<button class="btn btn-green share" style="margin-bottom: 15px">Share</button>
+			<a class="btn btn-blue" href="{$Think.config.app_path}/">Have another go</a>
 		</div>
 	</div>
 </div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '150753891946509',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+$('.share').click(function(){
+	FB.ui({
+		method: 'feed',
+		link: 'http://campaign.dhgate.com{$Think.config.app_path}/invite/{$code}',
+		caption: 'Help me guess it.',
+	}, function(response){
+		console.log(response);
+	});
+});
+</script>
 <include file="Public/foot" />

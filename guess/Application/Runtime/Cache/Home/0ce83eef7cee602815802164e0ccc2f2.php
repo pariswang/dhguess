@@ -29,7 +29,7 @@
 $('#start').click(function(){
 	var self = this;
 	function ani(n){
-		$(self).text('DRAW'+(new Array(n+1).join('.')));
+		$(self).text('DRAW'+(new Array(4-n).join('.')));
 		if(n == 0){
 			location.href='<?php echo (C("app_path")); ?>/game/draw';
 			return;
@@ -41,5 +41,6 @@ $('#start').click(function(){
 	ani(3);
 });
 </script>
+<script>document.body.addEventListener('touchstart', function () {});</script>
 </body>
 </html>

@@ -17,6 +17,23 @@
 	</div>
 </div>
 <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '150753891946509',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
 $('.btn').click(function(){
 <if condition="$logined">
 	<if condition="$user['guess_count'] lt 0">
@@ -25,7 +42,15 @@ $('.btn').click(function(){
 	location.href = '{$Think.config.app_path}/game';
 	</if>
 <else/>
-	
+FB.login(function(response){
+	FB.api('/me', function(response) {
+		$.post('{$Think.config.app_path}/index/fb',response,function(d){
+			if(d.ok){
+			location.href = '{$Think.config.app_path}/game';
+			}
+		},'json');
+	});
+});
 </if>
 });
 </script>
