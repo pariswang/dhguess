@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess It, Get It - DHGate.com</title>
+	<meta property="og:title" content="Guess It, Get It" />
+	<meta property="og:site_name" content="DHGate.com"/>
+	<meta property="og:url" content="http://campaign.dhgate.com/guess" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="{$Think.config.app_path}/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+</head>
+<body>
+{$error}<br/>
+<form method="POST" action="/guess/stats">
+<input type=text name=pwd /><br/>
+<input type=submit value="提交"/>
+</form>
+<include file="Public/foot" />

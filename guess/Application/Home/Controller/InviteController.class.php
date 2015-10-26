@@ -16,24 +16,25 @@ class InviteController extends Controller {
 			header('Location: '.C('app_path'));
 			exit;
 		}
+		$this->code = $code;
 		
-		if( $invite['newer_id'] <= 0){
-			$invite['newer_id'] = session('uid');
-			M('invite')->save($invite);
-			M('users')->where(array('id'=>$invite['sender_id']))->setInc('guess_count');
+		if(session('uid')>0){
+			$this->logined = true;
+			$this->user = M('users')->where(array('id'=>session('uid')))->find();
+		}else{
+			$this->logined = false;
 		}
 		
 		$invite['help_info'] = @unserialize($invite['help_info']);
 		$this->invite = $invite;
-		if(is_array($invite['help_info'])){
+		if(!empty($invite['help_info'])){
 			session('product', $invite['help_info']['product']);
 			session('guess_type', $invite['help_info']['guess_type']);
 			session('qid', $invite['help_info']['question_id']);
-			$inviter = M('users')->where(array('id'=>$invite['sender_id']))->find();
-			$this->inviter = $inviter;
-			$this->display('index2');
-			return;
+			echo 1;
 		}
+		$inviter = M('users')->where(array('id'=>$invite['sender_id']))->find();
+		$this->inviter = $inviter;
 		$this->display('index');
 	}
 }

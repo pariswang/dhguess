@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess It, Get It - DHGate.com</title>
+	<meta property="og:title" content="Guess It, Get It" />
+	<meta property="og:site_name" content="DHGate.com"/>
+	<meta property="og:url" content="http://campaign.dhgate.com/guess" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/guess/css/jquery.dataTables.css" rel="stylesheet" type="text/css"/>
+	<script src="{$Think.config.app_path}/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+	<script src="/guess/js/jquery.dataTables.js"></script>
+</head>
+<body>
+
+<table id="table1">
+<tr>
+	<td>Facebook ID</td>
+	<td>Name</td>
+	<td>创建时间</td>
+	<td>剩余次数</td>
+	<td>邀请次数</td>
+	<td>中奖</td>
+</tr>
+<volist name="users" id="user">
+	<tr>
+		<td>{$user.fb_id}</td>
+		<td>{$user.name}</td>
+		<td>{$user.ctime}</td>
+		<td>{$user.guess_count}</td>
+		<td>{$user.invite_accept_count}/{$user.invite_count}</td>
+		<td><if condition="$user['username'] neq ''">{$user.username}<br/>{$user.email}<img src="/guess{$user.product.img}" width="100px" height="100px"/></if></td>
+	</tr>
+</volist>
+</table>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	window.tb = $('#table1').DataTable({
+		pageLength:15,
+		order:[3,'desc']	});
+}); 
+</script>
+
+<include file="Public/foot" />

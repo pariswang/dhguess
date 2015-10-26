@@ -4,25 +4,83 @@
 	<div class="box-issue">
 		<div class="hd"></div>
 		<div class="con">
-			<div class="title">Your friend is now competing in a guessing price
+			<div class="title">Your friend {$inviter.name} is now competing in a guessing price
 game. He thinks the game  is amazing, and  he's suggesting
 you have a try. Guess it , get it!</div>                   
 		</div>
 	</div>
 
 	<div class="home-ft" style="padding-top: 20px">
-	<p style="margin-bottom: 10px;font-size: 14px;">You just guessed right, it is possible to receive free goods</p>
 		<div class="btn-bar">
-			<button class="btn" style="margin-bottom: 15px">Accept</button>
+			<button id="accept" class="btn" style="margin-bottom: 15px" <if condition="is_array($invite['help_info'])">ref="{$Think.config.app_path}/game/helpguess"<else/>ref="{$Think.config.app_path}"</if>>Accept</button>
+			<if condition="is_array($invite['help_info'])">
+				<button class="btn btn-blue" ref="{$Think.config.app_path}">Have another go</button>
+			</if>
 		</div>
 	</div>
 </div>
 <script>
-$('.btn').click(function(){
-<if condition="is_array($invite['help_info'])">
-location.href = "{$Think.config.app_path}/game/helpguess";
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '150753891946509',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+$('#accept').click(function(){
+	var ref = $(this).attr('ref');
+<if condition="$logined">
+	var response = {};
+	response.name = '{$user.name}';
+	response.id = '{$user.fb_id}';
+	response.code = '{$code}';
+	$.post('{$Think.config.app_path}/index/fb',response,function(d){
+		if(d.ok){
+			location.href = ref;
+		}
+	},'json');
 <else/>
-location.href = "{$Think.config.app_path}";
+	FB.login(function(response){
+		FB.api('/me', function(response) {
+			if(response.name && response.id){
+				response.code = '{$code}';
+				$.post('{$Think.config.app_path}/index/fb',response,function(d){
+					if(d.ok){
+						location.href = ref;
+					}
+				},'json');
+			}
+		});
+	});
+</if>
+});
+$('.btn-blue').click(function(){
+	var ref = $(this).attr('ref');
+<if condition="$logined">
+	location.href = ref;
+<else/>
+	FB.login(function(response){
+		FB.api('/me', function(response) {
+			if(response.name && response.id){
+				response.code = '{$code}';
+				$.post('{$Think.config.app_path}/index/fb',response,function(d){
+					if(d.ok){
+						location.href = ref;
+					}
+				},'json');
+			}
+		});
+	});
 </if>
 });
 </script>

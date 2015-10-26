@@ -3,16 +3,27 @@
 <div class="main home">
 	<div class="motif-bg"></div>
 	<div class="home-ft">
-		<if condition="$user.guess_count gt 0">
+		<if condition="$logined">
 		<p><span>{$user.guess_count}</span> more chances remaining</p>
 		</if>
 		<div class="btn-bar">
-			<button class="btn"><if condition="$user['guess_count'] lt 0">Want more chances to play?<else/>Start!</if></button>
+			<button class="btn" ref="{$Think.config.app_path}/game"><if condition="$user['guess_count'] gt 0">Start!<else/><if condition="$logined">Want more chances to play?<else/>Start!</if></if></button>
 		</div>
 		<p>
-			<a href="{$Think.config.app_path}/my/invite">Invitation sent</a><span class="line"> | </span><a href="{$Think.config.app_path}/my/coupon">My coupons</a>
+		<if condition="$logined">
+			<a href="{$Think.config.app_path}/my/invite">Invitation sent</a>
+			<span class="line"> | </span>
+			<a href="{$Think.config.app_path}/my/coupon">My coupons</a>
 			<span class="line"> | </span>
 			<a href="{$Think.config.app_path}/my/prize">My prizes</a>
+			<br/><br/><a href="/guess/index/logout">Logout</a>
+		<else/>
+			<a href="javascript:;" class="fb" ref="{$Think.config.app_path}/my/invite">Invitation sent</a>
+			<span class="line"> | </span>
+			<a href="javascript:;" class="fb" ref="{$Think.config.app_path}/my/coupon">My coupons</a>
+			<span class="line"> | </span>
+			<a href="javascript:;" class="fb" ref="{$Think.config.app_path}/my/prize">My prizes</a>
+		</if>
 		</p>
 	</div>
 </div>
@@ -34,19 +45,21 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 <script>
-$('.btn').click(function(){
+$('.btn, .fb').click(function(){
 <if condition="$logined">
-	<if condition="$user['guess_count'] lt 0">
-	location.href = '{$Think.config.app_path}/my/invite';
-	<else/>
+	<if condition="$user['guess_count'] gt 0">
 	location.href = '{$Think.config.app_path}/game';
+	<else/>
+	location.href = '{$Think.config.app_path}/my/invite';
 	</if>
 <else/>
+var ref = $(this).attr('ref');
 FB.login(function(response){
 	FB.api('/me', function(response) {
+		if(response.name && response.id)
 		$.post('{$Think.config.app_path}/index/fb',response,function(d){
 			if(d.ok){
-			location.href = '{$Think.config.app_path}/game';
+			location.href = ref;
 			}
 		},'json');
 	});

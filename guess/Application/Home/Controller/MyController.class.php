@@ -18,14 +18,18 @@ class MyController extends Controller {
 						'invite.newer_id' => array('GT', 0),
 						))
 					->select();
+		$new_invites = array();
 		foreach($invites as $index => $inv){
 			$invites[$index]['time_str'] = date('m/d/Y', strtotime($inv['ctime']));
+			if( !isset($new_invites[ $inv['sender_id'].'_'.$inv['newer_id'] ]) ){
+				$new_invites[ $inv['sender_id'].'_'.$inv['newer_id'] ] = $invites[$index];
+			}
 		}
 		$this->user = M('users')->where(array('id'=>session('uid')))->find();
 		$questions = M('question')->where(array('user_id'=>session('uid')))->select();
 		$this->question_count = count($questions);
-		$this->invites = $invites;
-		$this->invite_count = count($invites);
+		$this->invites = $new_invites;
+		$this->invite_count = count($new_invites);
 		$this->share_code();
 		$this->display();
 	}

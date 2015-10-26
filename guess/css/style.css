@@ -50,7 +50,7 @@ background: linear-gradient(#ffcc2c, #fcd962);
 .btn-list{display: table;width: 100%;}
 .btn-list li{display: inline-block;line-height: 32px;width: 50%;margin-bottom: 8px}
 .btn-list li a{display: block;background-color:rgba(95,60,152,.8);margin: 0 4px;color: #fff}
-.btn-list li a:active,.btn-list li a.select{background-color: rgba(95,60,152,.5);color:red;}
+.btn-list li a:active,.btn-list li a.select{background-color: rgba(95,60,152,.5);color:#FFD137;}
 
 
 .btn-wp .input-text{background-color: transparent;border: none;color: #fff;text-align: center;line-height: 36px;font-size: 16px;width: 89%;border-bottom: 1px solid rgba(255,255,255,.3)}
