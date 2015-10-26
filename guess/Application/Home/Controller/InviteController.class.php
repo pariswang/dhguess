@@ -31,9 +31,9 @@ class InviteController extends Controller {
 			session('qid', $invite['help_info']['question_id']);
 			$inviter = M('users')->where(array('id'=>$invite['sender_id']))->find();
 			$this->inviter = $inviter;
-			$this->display('index');
+			$this->display('index2');
 			return;
 		}
-		$this->display('index2');
+		$this->display('index');
 	}
 }

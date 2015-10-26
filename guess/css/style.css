@@ -16,10 +16,11 @@ img{max-width: 100%;max-height: 100%}
 .bg{background: url('../img/bg.jpg') no-repeat;background-size: 100% auto;position: fixed;top: 0;left: 0;right: 0;bottom: 0;z-index: 1}
 .main{position: relative;z-index: 2;padding-top: 14%}
 .motif-bg{background: url('../img/t1.png') no-repeat right 0;background-size:auto 100%;padding-top:90%;}
-.home .home-ft{position: fixed;bottom: 0;left: 0;right: 0}
+
 .home-ft{color: #fff;padding:10px 12% 10%;text-align: center;}
 .home-ft a{color:#8d75c1}
 .home-ft span.line{color: #483670;padding: 0 8px}
+.home .home-ft{padding-top:10%}
 .btn-bar{padding: 10px 0}
 .btn-bar .btn{cursor: pointer;background: #ffcc2c;
 background: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffcc2c), to(#fcd962));
