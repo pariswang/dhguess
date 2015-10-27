@@ -12,34 +12,61 @@
 	<script src="/guess/js/jquery.dataTables.js"></script>
 </head>
 <body>
-总用户数：{$user_count}, 中奖用户数：{$user_hit_count}<br/>
+<include file="Stats/nav" />
 <table id="table1">
+<thead>
 <tr>
 	<td>Facebook ID</td>
 	<td>Name</td>
 	<td>创建时间</td>
 	<td>剩余次数</td>
 	<td>邀请次数</td>
-	<td>中奖</td>
+	<td>操作</td>
 </tr>
+</thead>
+<tbody>
 <volist name="users" id="user">
 	<tr>
 		<td>{$user.fb_id}</td>
 		<td>{$user.name}</td>
 		<td>{$user.ctime}</td>
-		<td>{$user.guess_count}</td>
+		<td id="gc{$user.id}">{$user.guess_count}</td>
 		<td>{$user.invite_accept_count}/{$user.invite_count}</td>
-		<td><if condition="$user['username'] neq ''">{$user.username}<br/>{$user.email}<img src="/guess{$user.product.img}" width="100px" height="100px"/></if></td>
+		<td><button uid="{$user.id}" name="{$user.name}" t="{$user.guess_count}">修改剩余游戏次数</button></td>
 	</tr>
 </volist>
+</tbody>
 </table>
-
+<div id=lay style="width:600px;height: 34px;border: 1px gray solid;position: absolute;left: 50%;margin-left: -250px;top: 200px;background: white;padding:30px;display:none;">
+将<span id="name"></span>的剩余游戏次数修改为<input id="times" style="width: 30px;font-size: 21px;">次。&nbsp;&nbsp;<button id="ok" style="font-size: 21px;">确定
+</button></div>
 <script type="text/javascript">
 $(document).ready(function() {
 	window.tb = $('#table1').DataTable({
 		pageLength:15,
-		order:[3,'desc']	});
-}); 
+		order:[3,'desc']});
+	$('table button').click(function(){
+		var uid = $(this).attr('uid');
+		$('#ok').attr('uid',uid);
+		$('#name').text($(this).attr('name'));
+		$('#times').val($(this).attr('t'));
+		$('#lay').show();
+	});
+	$('#ok').click(function(){
+		var uid = $(this).attr('uid');
+		var t = $('#times').val();
+		$.post('/guess/stats/updateuser',{
+			uid:uid, guess_count:t
+		},function(d){
+			if(d.ok){
+				$('#gc'+uid).text(t);
+				$('#lay').hide();
+			}else{
+				alert(d.msg);
+			}
+		},'json');
+	});
+});
 </script>
 
 <include file="Public/foot" />

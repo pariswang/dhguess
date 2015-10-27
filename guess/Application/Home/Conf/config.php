@@ -9,6 +9,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/1.jpg',
+			'img_logo' => '/img/11/1.jpg',
 			'price' => array(
 				1 => '42.81',
 				2 => '59.66',
@@ -28,6 +29,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/2.jpg',
+			'img_logo' => '/img/11/2.jpg',
 			'price' => array(
 				1 => '29.98',
 				2 => '32.28',
@@ -47,6 +49,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/3.jpg',
+			'img_logo' => '/img/11/3.jpg',
 			'price' => array(
 				1 => '25.99',
 				2 => '36.89',
@@ -66,6 +69,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/4.jpg',
+			'img_logo' => '/img/11/4.jpg',
 			'price' => array(
 				1 => '38.79',
 				2 => '69.79',
@@ -85,6 +89,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/5.jpg',
+			'img_logo' => '/img/11/5.jpg',
 			'price' => array(
 				1 => '52.18',
 				2 => '65.68',
@@ -104,6 +109,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/6.jpg',
+			'img_logo' => '/img/11/6.jpg',
 			'price' => array(
 				1 => '49.99',
 				2 => '59.99',
@@ -123,6 +129,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/7.jpg',
+			'img_logo' => '/img/11/7.jpg',
 			'price' => array(
 				1 => '60',
 				2 => '65',
@@ -142,6 +149,7 @@ return array(
 			'name' => 'headphone',
 			'holder' => '****p****',
 			'img' => '/img/1/8.jpg',
+			'img_logo' => '/img/11/8.jpg',
 			'img_name' => '/img/1/8_name.jpg',
 			'price' => array(
 				1 => '55.63',
@@ -162,6 +170,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/9.jpg',
+			'img_logo' => '/img/11/9.jpg',
 			'price' => array(
 				1 => '16.57',
 				2 => '18.75',
@@ -181,6 +190,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/10.jpg',
+			'img_logo' => '/img/11/10.jpg',
 			'price' => array(
 				1 => '12.39',
 				2 => '15.66',
@@ -200,6 +210,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/1/11.jpg',
+			'img_logo' => '/img/11/11.jpg',
 			'price' => array(
 				1 => '20.39',
 				2 => '12.39',
@@ -219,6 +230,7 @@ return array(
 			'name' => 'cleanser',
 			'holder' => '****n***',
 			'img' => '/img/2/01.jpg',
+			'img_logo' => '/img/22/01.jpg',
 			'img_name' => '/img/2/01_name.jpg',
 			'price' => array(
 				1 => '25.33',
@@ -239,6 +251,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/02.jpg',
+			'img_logo' => '/img/22/02.jpg',
 			'price' => array(
 				1 => '15.21',
 				2 => '32.66',
@@ -258,6 +271,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/03.jpg',
+			'img_logo' => '/img/22/03.jpg',
 			'price' => array(
 				1 => '25.35',
 				2 => '31.35',
@@ -277,6 +291,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/04.jpg',
+			'img_logo' => '/img/22/04.jpg',
 			'price' => array(
 				1 => '34.07',
 				2 => '24.07',
@@ -296,6 +311,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/05.jpg',
+			'img_logo' => '/img/22/05.jpg',
 			'price' => array(
 				1 => '35.66',
 				2 => '43.28',
@@ -315,6 +331,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/06.jpg',
+			'img_logo' => '/img/22/06.jpg',
 			'price' => array(
 				1 => '61.26',
 				2 => '68.16',
@@ -334,6 +351,7 @@ return array(
 			'name' => 'watch',
 			'holder' => '**t**',
 			'img' => '/img/2/07.jpg',
+			'img_logo' => '/img/22/07.jpg',
 			'img_name' => '/img/2/07_name.jpg',
 			'price' => array(
 				1 => '20.14',
@@ -354,6 +372,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/08.jpg',
+			'img_logo' => '/img/22/08.jpg',
 			'price' => array(
 				1 => '31.28',
 				2 => '39.74',
@@ -373,6 +392,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/09.jpg',
+			'img_logo' => '/img/22/09.jpg',
 			'price' => array(
 				1 => '12.87',
 				2 => '19.88',
@@ -392,6 +412,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/10.jpg',
+			'img_logo' => '/img/22/10.jpg',
 			'price' => array(
 				1 => '14.32',
 				2 => '19.32',
@@ -411,6 +432,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/11.jpg',
+			'img_logo' => '/img/22/11.jpg',
 			'price' => array(
 				1 => '14.69',
 				2 => '21.09',
@@ -430,6 +452,7 @@ return array(
 			'name' => '',
 			'holder' => '',
 			'img' => '/img/2/12.jpg',
+			'img_logo' => '/img/22/12.jpg',
 			'price' => array(
 				1 => '27.66',
 				2 => '19.99',

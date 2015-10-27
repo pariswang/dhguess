@@ -216,6 +216,7 @@ class GameController extends Controller {
 			'newer_id' => array('GT', 0),
 		))->select();
 		$this->invite_count = count($invites);
+		$this->product = session('product');
 		$this->display();
 	}
 	
@@ -247,6 +248,7 @@ class GameController extends Controller {
 			'newer_id' => array('GT', 0),
 		))->select();
 		$this->invite_count = count($invites);
+		$this->product = session('product');
 		$this->display();
 	}
 }

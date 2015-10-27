@@ -46,6 +46,7 @@ $('.share-input').click(function(){
 		method: 'feed',
 		link: 'http://campaign.dhgate.com{$Think.config.app_path}/invite/{$code}',
 		caption: 'Help me guess it.',
+		picture: 'http://campaign.dhgate.com{$Think.config.app_path}{$product.img}',
 	}, function(response){
 		console.log(response);
 	});

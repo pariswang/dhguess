@@ -52,7 +52,8 @@ $('.share').click(function(){
 	FB.ui({
 		method: 'feed',
 		link: 'http://campaign.dhgate.com{$Think.config.app_path}/invite/{$code}',
-		caption: 'Help me guess it.',
+		caption: 'Help me guess it, guys!',
+		picture: 'http://campaign.dhgate.com{$Think.config.app_path}{$product.img_logo}',
 	}, function(response){
 		console.log(response);
 	});
