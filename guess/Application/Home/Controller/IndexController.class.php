@@ -26,16 +26,21 @@ class IndexController extends Controller {
 		if(IS_POST){
 			$name = I('post.name');
 			$id = I('post.id');
+			$gender = I('post.gender');
 			if(empty($name) || empty($id)){
 				$this->ajaxReturn(array('ok'=>0));
 			}
 			$user = M('users')->where(array('fb_id'=>$id))->find();
 			if($user){
+				$user['name'] = $name;
+				$user['img'] = $gender;
+				M('users')->save($user);
 				session('uid', $user['id']);
 			}else{
 				$nid = M('users')->add(array(
 					'name' => $name,
 					'fb_id' => $id,
+					'img' => $gender,
 					'guess_count' => C('default_chance'),
 					'ctime' => date('Y-m-d H:i:s'),
 				));

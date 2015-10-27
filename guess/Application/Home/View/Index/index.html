@@ -55,7 +55,7 @@ $('.btn, .fb').click(function(){
 <else/>
 var ref = $(this).attr('ref');
 FB.login(function(response){
-	FB.api('/me', function(response) {
+	FB.api('/me?fields=id,name,gender', function(response) {
 		if(response.name && response.id)
 		$.post('{$Think.config.app_path}/index/fb',response,function(d){
 			if(d.ok){

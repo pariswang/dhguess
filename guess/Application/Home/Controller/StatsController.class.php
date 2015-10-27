@@ -27,6 +27,7 @@ class StatsController extends Controller {
 		$products = C('products');
 		$invites = M('invite')->select();
 		$users = M('users')->select();
+		$user_hit_count = 0;
 		foreach($users as $index => $u){
 			if($u['product_id']>0){
 				$users[$index]['product'] = $products[$u['product_id']];
@@ -42,8 +43,13 @@ class StatsController extends Controller {
 				}
 			}
 			$users[$index]['invite_accept_count'] = count($users[$index]['invite_accept_count']);
+			if($u['hit']==1){
+				$user_hit_count++;
+			}
 		}
 		$this->users = $users;
+		$this->user_count = count($users);
+		$this->user_hit_count = $user_hit_count;
 		$this->display();
 	}
 }

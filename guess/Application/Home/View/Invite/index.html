@@ -5,7 +5,7 @@
 		<div class="hd"></div>
 		<div class="con">
 			<div class="title">Your friend {$inviter.name} is now competing in a guessing price
-game. He thinks the game  is amazing, and  he's suggesting
+game. <if condition="$user.img eq 'male'">He<else/>She</if> thinks the game  is amazing, and <if condition="$user.img eq 'male'">he<else/>she</if>'s suggesting
 you have a try. Guess it , get it!</div>                   
 		</div>
 	</div>
@@ -44,6 +44,7 @@ $('#accept').click(function(){
 	response.name = '{$user.name}';
 	response.id = '{$user.fb_id}';
 	response.code = '{$code}';
+	response.gender = '$user.img';
 	$.post('{$Think.config.app_path}/index/fb',response,function(d){
 		if(d.ok){
 			location.href = ref;
@@ -51,7 +52,7 @@ $('#accept').click(function(){
 	},'json');
 <else/>
 	FB.login(function(response){
-		FB.api('/me', function(response) {
+		FB.api('/me?fields=id,name,gender', function(response) {
 			if(response.name && response.id){
 				response.code = '{$code}';
 				$.post('{$Think.config.app_path}/index/fb',response,function(d){
@@ -70,7 +71,7 @@ $('.btn-blue').click(function(){
 	location.href = ref;
 <else/>
 	FB.login(function(response){
-		FB.api('/me', function(response) {
+		FB.api('/me?fields=id,name,gender', function(response) {
 			if(response.name && response.id){
 				response.code = '{$code}';
 				$.post('{$Think.config.app_path}/index/fb',response,function(d){
