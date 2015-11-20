@@ -13,6 +13,7 @@
 </head>
 <body>
 <include file="Stats/nav" />
+<a href="/guess/stats/downloadalllist" target="_blank">下载全部列表</a>
 <table id="table1">
 <thead>
 <tr>
@@ -44,8 +45,8 @@
 $(document).ready(function() {
 	window.tb = $('#table1').DataTable({
 		pageLength:15,
-		order:[3,'desc']});
-	$('table button').click(function(){
+		order:[2,'desc']});
+	$('table').delegate('button', 'click', function(){
 		var uid = $(this).attr('uid');
 		$('#ok').attr('uid',uid);
 		$('#name').text($(this).attr('name'));

@@ -26,7 +26,7 @@ class StatsController extends Controller {
 		
 		$products = C('products');
 		$invites = M('invite')->select();
-		$users = M('users')->select();
+		$users = M('users')->order('ctime desc')->select();
 		$user_hit_count = 0;
 		foreach($users as $index => $u){
 			if($u['product_id']>0){
@@ -53,6 +53,39 @@ class StatsController extends Controller {
 		$this->display();
 	}
 	
+	public function downloadalllist(){
+		if( session('is_admin') != 1 ){
+			header('Location: /guess/stats');
+			exit;
+		}
+		
+		$products = C('products');
+		$invites = M('invite')->select();
+		$users = M('users')->order('ctime desc')->select();
+		$user_hit_count = 0;
+		foreach($users as $index => $u){
+			if($u['product_id']>0){
+				$users[$index]['product'] = $products[$u['product_id']];
+			}
+			$users[$index]['invite_accept_count'] = array();
+			$users[$index]['invite_count'] = 0;
+			foreach($invites as $i){
+				if($i['sender_id'] == $u['id']){
+					$users[$index]['invite_count']++;
+					if($i['newer_id']>0){
+						$users[$index]['invite_accept_count'][ $i['newer_id'] ] = $i['newer_id'];
+					}
+				}
+			}
+			$users[$index]['invite_accept_count'] = count($users[$index]['invite_accept_count']);
+			if($u['hit']==1){
+				$user_hit_count++;
+			}
+		}
+		
+		exportExcel($users);
+	}
+	
 	public function updateuser(){
 		if(IS_POST){
 			$uid = I('post.uid');
@@ -73,7 +106,7 @@ class StatsController extends Controller {
 		
 		$products = C('products');
 		$invites = M('invite')->select();
-		$users = M('users')->where(array('hit'=>1))->select();
+		$users = M('users')->where(array('hit'=>1))->order('ctime desc')->select();
 		$user_hit_count = 0;
 		foreach($users as $index => $u){
 			if($u['product_id']>0){

@@ -103,7 +103,7 @@ class GameController extends Controller {
 			session('hit', 0);
 			return;
 		}
-		$c = M('users')->where(array('product_id'))->count();
+		$c = M('users')->where(array('product_id'=>$product['id']))->count();
 		if( $product['count'] <= 0 || $product['count'] <= $c ){
 			//没奖品了，就没中
 			session('hit', 0);
@@ -158,26 +158,48 @@ class GameController extends Controller {
 			header('Location: '.C('app_path'));exit;
 		}
 		
+		//先检查奖品数量
+		$user = M('users')->where(array('id'=>session('uid')))->find();
 		$this->product = session('product');
+		if( session('hit') == 1 ){
+			if( $user['hit']==1 ){
+				//曾经中过奖，就没中
+				session('hit', 0);
+			}
+			$c = M('users')->where(array('product_id'))->count();
+			if( $this->product['count'] <= 0 || $this->product['count'] <= $c ){
+				//没奖品了，就没中
+				session('hit', 0);
+			}
+		}
+		
+		
+		
 		if(IS_POST){
+			if( session('hit') == 0){
+				$this->error('You missed!',C('app_path'));
+				exit;
+			}
 			$username = I('post.username');
 			$email = I('post.email');
 			$pattern = "/^([0-9A-Za-z\\-_\\.]+)@([0-9a-z]+\\.[a-z]{2,3}(\\.[a-z]{2})?)$/i";
 			if( $username && $email && preg_match( $pattern, $email ) ){
 				$this->username = $username;
 				$this->email = $email;
-				$user = M('users')->where(array('id'=>session('uid')))->find();
 				$user['hit']=1;
 				$user['username'] = $username;
 				$user['email'] = $email;
 				$user['product_id'] = $this->product['id'];
 				M('users')->save($user);
+				session('hit', 0);
 				$this->display('draw_complete');
 				exit;
 			}
 		}
 		
-		if( session('hit') == 1 ){
+		
+		
+		if( session('hit') == 1){
 			$this->display('draw_hit');
 		}else{
 			$coupon = array(
